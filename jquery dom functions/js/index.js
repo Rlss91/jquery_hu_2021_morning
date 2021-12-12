@@ -12,4 +12,12 @@ $(document).ready(function () {
     console.log("blur");
     $("#dd-m").hide();
   });
+  $("#nv-togler")
+    .click(function () {
+      console.log("click");
+      $("#navbarSupportedContent").toggle();
+    })
+    .blur(function () {
+      $("#navbarSupportedContent").hide();
+    });
 });

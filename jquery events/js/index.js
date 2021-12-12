@@ -70,3 +70,17 @@ $(document).ready(function () {
     }
   });
 });
+//js
+// window.addEventListener("load", () => {
+//   document.querySelector("#txt").addEventListener("keydown", (event) => {
+//     console.log("event", event);
+//     console.log("value", event.target.value);
+//     console.log("keydown event happend");
+//     const l = event.target.value.length;
+//     if (l >= 5 && l <= 10) {
+//       console.log("good job");
+//     } else {
+//       console.error("error");
+//     }
+//   });
+// });

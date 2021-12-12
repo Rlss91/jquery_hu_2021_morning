@@ -52,6 +52,9 @@ $(document).ready(function () {
 
 //select by myattr -> attr
 //jquery
+//start with myattr^=myattrdiv
+//end with myattr$=myattrdiv
+//contain with myattr*=myattrdiv
 $(document).ready(function () {
   $("[myattr=myattrdiv]").click(function () {
     console.log("btn pressed");

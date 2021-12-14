@@ -18,4 +18,23 @@ $(document).ready(function () {
     $("#div3").fadeToggle(1000);
   });
   $("#div4").fadeTo(1000, 0.5);
+  //toggle between slideUp and slideDown
+  $("#item1").click(function () {
+    $("#item2").slideToggle(1000);
+  });
+  $("#animDiv").click(function () {
+    $("#animDiv").animate(
+      {
+        width: "55rem",
+        opacity: "0.5",
+      },
+      2000,
+      function () {
+        $("#animDiv").animate({ height: "55rem" });
+      }
+    );
+  });
 });
+function stopAnim() {
+  $("#animDiv").stop();
+}
